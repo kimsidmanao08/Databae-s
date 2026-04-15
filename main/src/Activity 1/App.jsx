@@ -1,13 +1,18 @@
 import groupPic from './grouppic.jpg';
+import databae_kim from './databae_kim.jpg';
+import databae_gian from './databae_gian.jpg';
+import databae_minic from './databae_minic.jpg';
+import databae_joy from './databae_joy.jpg';
+import databae_frank from './databae_frank.jpg';
 import "./App.css"
 
 const App = () => {
   const members = [
-    { name: "Dominic", role: "Team Simpleng Tao", desc: "The Databe's Prophet." },
-    { name: "Gian", role: "Nagbabatak Mag Developer", desc: "Looking Left cause You never Treat me right." },
-    { name: "Frank", role: "CUTIEPIE Entrepreneur", desc: "Laging nasa hustlin para mabili ng mamahalin." },
-    { name: "Kim", role: "Halimaw Engineer", desc: "MAYBE THE NIGHTS." },
-    { name: "Mary Joy", role: "SYSTEMATIC Analyst", desc: "MAYBE TOMORROW IS ANOTHER DAY BUT TODAY IS NOT TOMORROW" },
+    { img: databae_minic, name: "Dominic", role: "Simpleng Tao", desc: "The Databae's Prophet." },
+    { img: databae_gian, name: "Gian", role: "Nagbabatak Mag Developer", desc: "Looking Left cause You never Treat me right." },
+    { img: databae_frank, name: "Frank", role: "CUTIEPIE Entrepreneur", desc: "Laging nasa hustlin para mabili ka ng mamahalin." },
+    { img: databae_kim, name: "Kim", role: "Halimaw Na Engineer", desc: "MAYBE THE NIGHTS." },
+    { img: databae_joy, name: "Mary Joy", role: "SYSTEMATIC Analyst", desc: "MAYBE TOMORROW IS ANOTHER DAY BUT TODAY IS NOT TOMORROW" },
   ];
 
   return (
@@ -31,7 +36,7 @@ const App = () => {
 
           <div className="hero-text">
             <h1>We are the Databae's</h1>
-            <p>inspired by Mr. Databae himself | BS Info Tech - 2B</p>
+            <p>inspired by Mr. Databae himself 1OF1 "DOL"| BS Info Tech - 2B</p>
             <a href="#about" className="btn">About Us</a>
           </div>
         </section>
@@ -47,17 +52,17 @@ const App = () => {
 
         {/* 5 Column Members Grid */}
         <div className="members-grid">
-          {members.map((member, index) => (
+          {members.map((data, index) => (
             <div className="member-card" key={index}>
               <div className="member-image-wrapper">
-                <img src={groupPic} alt={member.name} />
+                <img src={data.img} alt={data.role} />
                 <div className="member-hover-overlay">
-                  <p>{member.desc}</p>
+                  <p>{data.desc}</p>
                 </div>
               </div>
               <div className="member-info">
-                <h4>{member.name}</h4>
-                <span>{member.role}</span>
+                <h4>{data.name}</h4>
+                <span>{data.role}</span>
               </div>
             </div>
           ))}
@@ -66,7 +71,7 @@ const App = () => {
 
       {/* Contact Section*/}
       <section id="contact" className="contact-section">
-        <h2>Get In Touch With Us </h2>
+        <h2>Touch With Us </h2>
         <p>Feel free to reach out to us "Wag Kang Matakot" through any of these platforms:</p>
         
         <div className="contact-info-grid">
@@ -76,7 +81,7 @@ const App = () => {
           </div>
           <div className="info-item">
             <h4>Location</h4>
-            <p>Calbayog city Rueds Street. NWSSU CCIS Department - LAB2 </p>
+            <p>Calbayog city Rueda Street. NWSSU CCIS Department - LAB2 </p>
           </div>
         </div>
       </section>
@@ -86,10 +91,17 @@ const App = () => {
         <div className="footer-content">
           <p>&copy; 2026 Databae's | BS Info Tech - 2B</p>
           <div className="footer-links">
-            <a href="#">Facebook</a>
-            <a href="#">GitHub</a>
-            <a href="#">Instagram</a>
-            <a href="#">Telegram</a>
+            <a href="#">DILG</a>
+            <a href="#">BOLDWALLY</a>
+            <a href="#">KANTOSIOMAI</a>
+            <a href="#">SAMELCO I</a>
+            <a href="#">SOUTHSTAR</a>
+            <a href="#">REBELITOS</a>
+            <a href="#">TAXIKOL</a>
+            <a href="#">DLTB.</a>
+            <a href="#">PETRON</a>
+            <a href="#">GAISANO</a>
+            <a href="#">SIR RODOLFO "MR DATABAE HIMSELF"</a>
           </div>
         </div>
       </footer>
